@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Agenda con Node Js</title>
+    
+    
+    
+
+    <style>
+
+        body{
+          background-color: cornflowerblue;
+        }
+        table thead {
+              background:#302b63;
+              color:white;
+          }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col">
+                <h2>Datos</h2>
+                <button onclick="window.location.href='/agregar'">Agregar Datos</button>
+                <button onclick="window.location.href='/listacompleta'">Mostar lista con los Datos</button>
+                <h2>Buscar Datos</h2>
+                <input id="gex" type="text">
+                <script src="/Buscar.js" defer></script>
+                <button onclick="traer()">Buscar</button>
+                
+                <div class="my-3">
+                    <table class="table" id="lista-usuarios">
+                        <thead>
+                            <tr>
+                                <th scope="col">Nombre</th>
+                                <th scope="col">Apellido</th>
+                                <th scope="col">Telefono</th>
+                                                              
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
